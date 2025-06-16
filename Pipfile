@@ -12,6 +12,7 @@ black = "*"
 isort = "*"
 pylint = "*"
 pre-commit = "*"
+mypy = "*"
 
 [requires]
 python_version = "3.13"

@@ -1,0 +1,28 @@
+[tool.black]
+line-length = 88
+target-version = ["py313"]
+
+[tool.isort]
+profile = "black"
+line_length = 88
+multi_line_output = 3
+include_trailing_comma = true
+
+[tool.mypy]
+python_version = "3.13"
+ignore_missing_imports = true
+strict = true
+disallow_untyped_defs = true
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+select = ["E", "F", "W", "C90", "I", "B", "S", "PL"]
+ignore = ["E501"]
+exclude = ["tests/"]
+
+[tool.bandit]
+skips = ["B101"]
+
+[tool.pyupgrade]
+py3-plus = true
