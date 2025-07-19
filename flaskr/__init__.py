@@ -25,4 +25,7 @@ def create_app(test_config: dict[str, Any] | None = None) -> Flask:
     except OSError:
         pass
 
+    from . import db
+    db.init_app(app)
+
     return app
