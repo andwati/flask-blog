@@ -7,12 +7,15 @@ requires-python = ">=3.13"
 dependencies = [
     "flask>=3.1.1",
     "python-dotenv>=1.1.1",
+    "waitress>=3.0.2",
 ]
 
 [dependency-groups]
 dev = [
+    "coverage>=7.9.2",
     "djlint>=1.36.4",
     "pre-commit>=4.2.0",
+    "pytest>=8.4.1",
     "requests>=2.32.4",
     "ruff>=0.12.4",
 ]
