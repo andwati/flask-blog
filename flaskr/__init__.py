@@ -28,4 +28,7 @@ def create_app(test_config: dict[str, Any] | None = None) -> Flask:
     from . import db
     db.init_app(app)
 
+    from . import auth
+    app.register_blueprint(auth.bp)
+
     return app
